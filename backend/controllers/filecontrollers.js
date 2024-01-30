@@ -1,14 +1,15 @@
 const fs=require("fs");
 const { Filemodel } = require("../model/fileUpload.model");
 const { createWriteStream, existsSync,createReadStream ,unlinkAsync} = require('fs');
-const fileSaver = require('file-saver');
-const mimeTypes = require('mime-types');
+
+const mimeTypes = require('mime-types'); // for file type
+//save file for every userby
 const filecontrollers={
     upload:async(req,res)=>{
         const { userId } = req.body; 
         const { filename } = req.file;
         const uniqueCode = filename.split('_')[0];
-        console.log(userId)
+       
       try {
         
           const newFile = new Filemodel({ userId, filename, code: uniqueCode });
@@ -19,6 +20,7 @@ const filecontrollers={
         
       }
     },
+    // Get file by userId
     getfilesByUserId:async(req,res)=>{
         try {
             const { userId } = req.body;
@@ -74,7 +76,7 @@ const filecontrollers={
         }
     
         const filePath = `./uploads/${file.filename}`;
-    console.log(filePath)
+   
         if (fs.existsSync(filePath)) {
           await new Promise((resolve, reject) => {
             fs.unlink(filePath, (err) => {
