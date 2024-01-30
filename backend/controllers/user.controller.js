@@ -21,15 +21,6 @@ const registerController = {
           return res.status(400).json({ error: err.message });
         }
 
-      // if (
-      //     !/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/.test(
-      //       password
-      //     )
-      //   ) {
-      //     return res.status(400).json({
-      //       msg: "Password should contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character, and minimum length should be 8!",
-      //     });
-      //   }
 
         const user = new UserModel({
         

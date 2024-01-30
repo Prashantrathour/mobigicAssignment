@@ -16,7 +16,7 @@ app.use(express.json())
 app.use("/users",userRouter )
 app.use("/files",fileRouter )
 app.get("/",(req,res)=>{
-    res.json("Welcome ! Mobigic Api")
+    res.json("Welcome ! Mobigic Api succesfully running")
 })
 
 app.listen(process.env.port||8080,async()=>{
