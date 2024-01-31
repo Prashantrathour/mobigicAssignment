@@ -1,10 +1,15 @@
 # Backend README
 
-This is the backend for login And Register user, built with Node.js, Express, MongoDB, Mongoose, JWT authentication, and bcrypt.
+This is the backend for login And Register user and upload files and download files, built with Node.js, Express, MongoDB, Mongoose, JWT authentication, and bcrypt.
 
 ## Project Overview
 
-Briefly describe the purpose and functionality of your project.
+  - create Account
+  - Login with right credentials
+  - Upload files (Any type file)
+  - Download files
+
+
 
 ## Prerequisites
 
@@ -61,12 +66,12 @@ Describe the available API endpoints, including their routes, methods, and requi
 
 - **POST /api/user/register**
   - Registers a new user.
-  - Requires a JSON payload with `name`, `username`, `email`, `password`, and `phonenumber`.
+  - Requires a JSON payload with , `username`,  `password`.
   - Returns a success message or error.
 
 - **POST /api/user/login**
   - Logs in a user.
-  - Requires a JSON payload with `email` and `password`.
+  - Requires a JSON payload with `username` and `password`.
   - Returns a JWT token on successful login.
 
 - **POST /api/user/logout**
