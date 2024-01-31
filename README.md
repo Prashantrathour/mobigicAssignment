@@ -2,10 +2,11 @@
 
 This is the frontend for Login and register user and upload and down load files, built with HTML, CSS, JavaScript, React, Tailwind CSS, and Axios.
 ## Deployed link
-  - [Frontend](#/)
-  - [backend](#/)
+  - [Frontend](https://mobigicapp.netlify.app)
+  - [backend](https://mobigic-api.onrender.com/)
 ## Project Overview
-![Screenshot (68)](https://github.com/Prashantrathour/mobigic/assets/112960345/dcaeda28-c608-4272-96e6-4e08fd34daca)
+![295804901-dcaeda28-c608-4272-96e6-4e08fd34daca](https://github.com/Prashantrathour/mobigicAssignment/assets/112960345/58ae48ac-4272-4840-9b60-f72baa84498a)
+
 
 This is file upload page in user succesfully login they will navigate this page user can upload any type of file and user can delete and download only his files
 
@@ -83,7 +84,7 @@ To register a new account, use the following steps:
 
 ## Deployment
 
-The project is deployed on Netlify. You can access the live version at [Live Demo](https://mobigic-app.netlify.app/).
+The project is deployed on Netlify. You can access the live version at [Live Demo](https://mobigicapp.netlify.app/).
 
 ## Project Structure
 
