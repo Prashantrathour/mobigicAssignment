@@ -3,8 +3,9 @@ import axios from "axios"
 import {ToastContainer,toast} from "react-toastify"
 import { errorAlert, succesAlert } from "../Notification";
 import { ImSpinner9 } from "react-icons/im";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 function Register() {
+  const navigate=useNavigate()
    const [Loading,setLoading]=useState(false)
         const [formData, setFormData] = useState({
          
@@ -32,6 +33,9 @@ function Register() {
                succesAlert(res?.data?.msg||"User registration done!");
              
                 setLoading(false)
+                setTimeout(() => {
+                  navigate("/login")
+                }, 1000);
 
             } catch (error) {
                 errorAlert(error?.response?.data?.msg)
